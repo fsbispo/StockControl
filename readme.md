@@ -8,6 +8,7 @@ Sistema de controle de estoque desenvolvido em **.NET 8** utilizando os princíp
 
 O projeto é dividido em **quatro camadas principais**, seguindo o padrão Clean Architecture.
 
+```plaintext
 src/
 ├── StockControl.Domain/
 │   ├── Entities/
