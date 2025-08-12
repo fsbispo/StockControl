@@ -1,4 +1,5 @@
-﻿using StockControl.Domain.Repositories;
+﻿using StockControl.Application.Commands.Products;
+using StockControl.Domain.Repositories;
 
 namespace StockControl.Application.Handlers.Products
 {
@@ -11,14 +12,14 @@ namespace StockControl.Application.Handlers.Products
             _productRepository = productRepository;
         }
 
-        public async Task Handle(Guid productId, int quantity)
+        public async Task Handle(RemoveStockCommand command)
         {
-            var product = await _productRepository.GetByIdAsync(productId);
+            var product = await _productRepository.GetByIdAsync(command.ProductId);
             if (product == null)
             {
                 throw new Exception("Product not found");
             }
-            product.RemoveStock(quantity);
+            product.RemoveStock(command.Quantity);
             await _productRepository.UpdateAsync(product);
         }
     }

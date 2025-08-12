@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using StockControl.Application.Commands;
-using StockControl.Application.Handlers;
-using StockControl.Domain.Commands.Products;
-using StockControl.Domain.Handlers.Products;
+using StockControl.Application.Commands.Products;
+using StockControl.Application.Handlers.Products;
 
 namespace StockControl.WebAPI.Controllers;
 
