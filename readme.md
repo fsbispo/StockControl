@@ -10,23 +10,23 @@ O projeto é dividido em **quatro camadas principais**, seguindo o padrão Clean
 
 src/
 ├── StockControl.Domain/
-│ ├── Entities/
-│ ├── ValueObjects/
-│ ├── Enums/
-│ └── Interfaces/
+│   ├── Entities/
+│   ├── ValueObjects/
+│   ├── Enums/
+│   └── Interfaces/
 │
 ├── StockControl.Application/
-│ ├── Commands/
-│ ├── Handlers/
-│ └── DTOs/
+│   ├── Commands/
+│   ├── Handlers/
+│   └── DTOs/
 │
 ├── StockControl.Infrastructure/
-│ ├── Repositories/
-│ └── Data/
+│   ├── Repositories/
+│   └── Data/
 │
 └── StockControl.WebAPI/
-├── Controllers/
-└── Program.cs
+    ├── Controllers/
+    └── Program.cs
 
 markdown
 Copiar
