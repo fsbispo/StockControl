@@ -1,8 +1,8 @@
-﻿using StockControl.Domain.Commands.Products;
+﻿using StockControl.Application.Commands.Products;
 using StockControl.Domain.Entities;
 using StockControl.Domain.Repositories;
 
-namespace StockControl.Domain.Handlers.Products
+namespace StockControl.Application.Handlers.Products
 {
     public class CreateProductHandler
     {
