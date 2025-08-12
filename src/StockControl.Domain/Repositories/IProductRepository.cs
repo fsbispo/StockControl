@@ -2,7 +2,7 @@
 
 namespace StockControl.Domain.Repositories
 {
-    public interface IProjectRepository
+    public interface IProductRepository
     {
         Task<Product?> GetByIdAsync(Guid id);
         Task<IEnumerable<Product>> GetAllAsync();
